@@ -7,6 +7,7 @@ import DashboardProfile from "./pages/DashboardProfile";
 import DashboardSettings from "./pages/DashboardSettings";
 import DashboardHome from "./pages/DashboardHome";
 import UserPage from "./pages/UserPage";
+import LoginPage from "./pages/loginPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/login" element={<LoginPage />} />
 
         {/* dashboard layout + nested routes */}
         <Route path="/dashboard" element={<DashboardLayout />}>

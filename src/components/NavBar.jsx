@@ -37,6 +37,9 @@ function NavBar() {
       <StyledNavLink to="/dashboard">
         Dashboard
       </StyledNavLink>
+            <StyledNavLink to="/login">
+        Log In
+      </StyledNavLink>
     </StyledNav>
   );
 }

@@ -1,4 +1,4 @@
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { Routes, Route, Link, NavLink, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import {NavBar} from "./components/NavBar";
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         {/* top-level routes */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="/about" element={<AboutPage />} />
 
         {/* dashboard layout + nested routes */}

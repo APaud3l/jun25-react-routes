@@ -6,6 +6,7 @@ import DashboardLayout from "./pages/DashboardLayout";
 import DashboardProfile from "./pages/DashboardProfile";
 import DashboardSettings from "./pages/DashboardSettings";
 import DashboardHome from "./pages/DashboardHome";
+import UserPage from "./pages/UserPage";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Route path="profile" element={<DashboardProfile />} />
           <Route path="settings" element={<DashboardSettings />} />
         </Route>
+
+        {/* User Route */}
+        <Route path="/users/:username" element={<UserPage />} />
 
         {/* 404 route */}
         <Route path="*" element={<h2>404 Page Not Found</h2>} />
